@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #242424;
+  background-color: #424242;
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -173,14 +173,21 @@ body {
 .container #portfolio .projects .project .github-icon .github {
   margin: 0px auto;
   width: 40px;
+  transition: 0.5s ease;
 }
 .container #portfolio .projects .project .github-icon .github:hover {
-  transform: translateX(-70px);
+  transform: translateX(-74px);
 }
-.container #portfolio .projects .project .github-icon p {
+.container #portfolio .projects .project .github-icon a {
+  list-style: none;
+  text-decoration: none;
+  color: #161716;
   position: absolute;
   margin: auto;
+}
+.container #portfolio .projects .project .github-icon p {
   transform: scale(0);
+  transition: 0.8s ease;
 }
 .container #portfolio .projects .project .description {
   padding: 10px;
@@ -192,7 +199,7 @@ body {
 .container #portfolio .projects .project:hover {
   background-color: #928f8f;
   height: 300px;
-  box-shadow: 0 0 6px #a2a3a3;
+  box-shadow: 0 0 0 4px #00a35d;
   animation: bounce 0.5s alternate;
 }
 .container #portfolio .projects .project:hover .github-icon {
