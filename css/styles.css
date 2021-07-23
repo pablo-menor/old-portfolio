@@ -23,6 +23,7 @@ body {
   position: fixed;
   top: 0px;
   width: 100vw;
+  z-index: 1;
 }
 .container nav #wrap {
   line-height: 55px;
@@ -84,6 +85,35 @@ body {
 .container #home #welcome span:hover {
   color: #00B567;
   /*  font-size: 45px;*/
+}
+.container #home #wrap-introduction {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding-left: 8%;
+}
+.container #home #wrap-introduction #intro {
+  height: 100%;
+  flex: 2;
+  border-right: 2px solid green;
+}
+.container #home #wrap-introduction #intro p {
+  margin-top: 20%;
+  margin-right: 10%;
+  font-family: "Annie Use Your Telescope", cursive;
+  font-size: 35px;
+  color: #b9b7b7;
+  letter-spacing: 2px;
+}
+.container #home #wrap-introduction #animation {
+  height: 100%;
+  flex: 3;
+  position: relative;
+}
+.container #home #wrap-introduction #animation img {
+  position: absolute;
+  top: 200px;
+  object-fit: cover;
 }
 .container #skills {
   height: 100vh;
@@ -168,7 +198,7 @@ body {
 .container #portfolio .projects .project .github-icon {
   display: none;
   margin-top: 40px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 .container #portfolio .projects .project .github-icon .github {
   margin: 0px auto;
@@ -195,11 +225,24 @@ body {
   text-align: center;
   font-family: monospace;
   font-size: 16px;
+  margin-bottom: 5px;
+}
+.container #portfolio .projects .project a {
+  text-decoration: none;
+}
+.container #portfolio .projects .project a #visit-site {
+  width: 30%;
+  margin: auto;
+  background-color: #989898;
+  text-align: center;
+  border-radius: 15px;
+  padding: 5px;
+  display: none;
+  color: #161716;
 }
 .container #portfolio .projects .project:hover {
-  background-color: #928f8f;
+  background-color: #348b66;
   height: 300px;
-  box-shadow: 0 0 0 4px #00a35d;
   animation: bounce 0.5s alternate;
 }
 .container #portfolio .projects .project:hover .github-icon {
@@ -221,13 +264,16 @@ body {
 .container #portfolio .projects .project:hover .description {
   display: block;
 }
+.container #portfolio .projects .project:hover #visit-site {
+  display: block;
+}
 .container #contact {
   color: #a5a4a4;
   font-family: monospace;
   font-size: 25px;
   margin-left: 100px;
   letter-spacing: 6px;
-  height: 85vh;
+  height: 70vh;
 }
 
 /*# sourceMappingURL=styles.css.map */

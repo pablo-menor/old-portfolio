@@ -22,7 +22,7 @@ body{
         position: fixed;
         top: 0px;
         width: 100vw;
-        
+        z-index: 1;
         #wrap{
             line-height: 55px;
     
@@ -93,6 +93,42 @@ body{
                 /*  font-size: 45px;*/
             }       
         }
+
+        #wrap-introduction{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            padding-left: 8%;
+
+            #intro{  
+                height: 100%;
+                flex: 2;
+                border-right: 2px solid green;
+
+                p{
+                    //background-color: #838181;
+                    margin-top: 20%;
+                    margin-right: 10%;
+                    font-family: 'Annie Use Your Telescope', cursive;
+                    font-size: 35px;
+                    color: #b9b7b7;
+                    letter-spacing: 2px;
+                }
+            }
+
+            #animation{
+                height: 100%;
+                flex: 3;
+                position: relative;
+
+                img{
+                    position: absolute;
+                    top: 200px;
+                    object-fit: cover;
+                }
+                
+            }
+        }
     }
 
     #skills{
@@ -155,7 +191,6 @@ body{
 
     #portfolio{
         height: 100vh;
-    
         h2{
             color: #a5a4a4;
             font-family: monospace;
@@ -165,7 +200,7 @@ body{
             margin-top: 100px;
         }
 
-        .projects{
+        .projects{          
             width: 100vw;
             margin-top: 150px; 
             display: inline-flex;
@@ -198,7 +233,7 @@ body{
                 .github-icon{
                  display: none;
                  margin-top: 40px;
-                 margin-bottom: 35px;
+                 margin-bottom: 25px;
                  
                     .github{
                         margin: 0px auto;
@@ -230,15 +265,31 @@ body{
                     text-align: center;
                     font-family: monospace;
                     font-size: 16px;
+                    margin-bottom: 5px;
                 }
+
+                a{
+                    text-decoration: none;
+                    #visit-site{
+                        width: 30%;
+                        margin: auto;
+                        background-color:#989898;
+                        text-align: center;
+                        border-radius: 15px;
+                        padding: 5px;
+                        display: none;
+                        color: #161716;
+                       
+                    }
+                }
+              
                 
             }
 
             .project:hover{
-                background-color: #928f8f;
+                //background-color: #928f8f;
+                background-color: #348b66;
                 height: 300px;
-                //box-shadow: 0 0 6px #a2a3a3;
-                box-shadow: 0 0 0 4px #00a35d;
                 animation: bounce 0.5s  alternate;
 
                
@@ -265,6 +316,9 @@ body{
             .project:hover .description{
                 display: block;
             }
+            .project:hover #visit-site{
+                display: block;
+            }
         }
     }
 
@@ -274,6 +328,6 @@ body{
         font-size: 25px;
         margin-left: 100px;
         letter-spacing: 6px;
-        height: 85vh;
+        height: 70vh;
     }
 }
