@@ -19,7 +19,6 @@ window.onload = function(){
     
                 })        
             }) 
-            console.log(id);      
     }
 
     githubEffect('1');
