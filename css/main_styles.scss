@@ -103,30 +103,50 @@ body{
             #intro{  
                 height: 100%;
                 flex: 2;
-                border-right: 2px solid green;
 
                 p{
                     //background-color: #838181;
                     margin-top: 20%;
                     margin-right: 10%;
                     font-family: 'Annie Use Your Telescope', cursive;
+                   //font-family: 'Abel', sans-serif;
                     font-size: 35px;
                     color: #b9b7b7;
-                    letter-spacing: 2px;
+                    letter-spacing: 2px; //2
                 }
             }
 
             #animation{
                 height: 100%;
                 flex: 3;
-                position: relative;
+               #space{
+                   width: 400px;
+                   height: 400px;
+                   background-color:#161716;
+                   display: flex;
+                   justify-content: center;
+                   border-radius: 100%;
+                   margin-left: 15%;
+                   overflow: hidden;
+                  #rocket{
+                    width: 250px;
+                    animation: fly 2.5s infinite;
 
-                img{
-                    position: absolute;
-                    top: 200px;
-                    object-fit: cover;
-                }
-                
+                  }
+
+                  @keyframes fly {
+                    50%{
+                        transform: translateY(-12%);
+                    }
+                 } 
+
+                 @keyframes leave {
+                     50%{
+                        transform: translateY(-100%);
+                     }
+                     
+                 }
+               }
             }
         }
     }
