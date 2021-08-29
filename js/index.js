@@ -53,7 +53,27 @@ window.onload = function(){
             text_space.style.display = "block";
             
         },1000);
-       
-        
     })
+
+    //----------------Copy email to clipboard------------------------------
+
+    const gmail = document.querySelector('.gmail');
+    const buttonEmail = document.querySelector('.email');
+
+    gmail.addEventListener('mouseenter', () =>{
+        buttonEmail.style.backgroundColor = "#00B567";
+    })
+    gmail.addEventListener('mouseleave', () =>{
+        if(buttonEmail.innerHTML != 'Copied!')
+        buttonEmail.style.backgroundColor = "#424242";
+      
+    })
+
+    gmail.addEventListener('click', () =>{
+        buttonEmail.innerHTML = 'Copied!';
+        buttonEmail.style.lineHeight = '35px';
+        buttonEmail.style.backgroundColor = "#00B567";
+        navigator.clipboard.writeText('pablomenordeonate@gmail.com');
+    })
+
 }

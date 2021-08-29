@@ -23,9 +23,13 @@ body{
         top: 0px;
         width: 100vw;
         z-index: 1;
+        
         #wrap{
-            line-height: 55px;
-    
+            line-height: 6vh;
+            /*display: flex;
+            flex-direction: row;
+            align-items: center;*/
+            
             #logo{
                 float: left;
                 margin-left: 8%;
@@ -198,7 +202,7 @@ body{
 
     #skills{
         height: 100vh;
-    
+        
         h2{
             color: #a5a4a4;
             font-family: monospace;
@@ -208,6 +212,9 @@ body{
             margin-top: 100px;
         }
         
+        .wrap-tech{
+            display: flex;
+        }
         .icons{
             
             width: 40vw;
@@ -221,7 +228,8 @@ body{
     
                 .icon{
                     margin-top: 10px;
-                    width: 75px;
+                   // width: 75px;
+                    width: 46%;
                     margin-right: 30px;
                     transition: .1s;
                 }            
@@ -234,7 +242,7 @@ body{
                     width: 5.3%;
                     height: 0.6%;
                     transform: scale(0);
-                    transition: .1s ;
+                    transition: all 0.2s ease-out;
                     margin-top: 10px;
                    
                 }
@@ -251,6 +259,16 @@ body{
           
         }
        
+        .tech-text{
+            margin-left: 5%;
+            margin-top: 10%;
+            width: 35vw;
+            height: 350px;
+            font-family: 'Cutive Mono';
+            font-size: 1.7rem;
+            line-height: 2.5rem;
+            color: #a7a7a7;
+        }
        
     }
 
@@ -335,7 +353,7 @@ body{
 
                 a{
                     text-decoration: none;
-                    #visit-site{
+                    .visit-site{
                         width: 30%;
                         margin: auto;
                         background-color:#989898;
@@ -344,6 +362,8 @@ body{
                         padding: 5px;
                         display: none;
                         color: #161716;
+                        font-family: monospace;
+                        font-size: 0.8rem;
                        
                     }
                 }
@@ -381,8 +401,9 @@ body{
             .project:hover .description{
                 display: block;
             }
-            .project:hover #visit-site{
+            .project:hover .visit-site{
                 display: block;
+               
             }
         }
     }
@@ -402,39 +423,33 @@ body{
             margin-top: 8%;        
             display: flex;
             flex-direction: column;
-          //align-items: center;
+          align-items: center;
             .gmail{
                 display: flex;
-                img{
-                    width: 50px;
-                }
-
+                cursor: pointer;
          
                 .email{
-                 width: 200px;
+                 width: 300px;
+                 height: 35px;
+                 line-height: 20px;
                   margin-left: 2%;
-                  padding: 0.5%;
-                  font-size: 1.5rem;
+                  padding: 5%;
+                  font-size: 1.4rem;
                   color: #fff;
                   border: 1px solid #fff;
-                  height: 30px;
-                  line-height: 30px;
-                  text-align: center    ;
+                  text-align: center;
+                  border-radius: 100px;
+                  font-family:'Cutive Mono';
                 }
             }
             .linkedin{
                 margin-top: 5%;
                 display: flex;
+                cursor: pointer;
                 img{
                     width: 90px;
                     margin-left: 4%;
                 }
-            }
-
-            .enum{
-                font-size: 20px;
-                margin-left: 35%;
-                color: #00c872;
             }
         }
     }
