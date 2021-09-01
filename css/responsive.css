@@ -183,6 +183,7 @@
     right: 5%;
     color: rgb(212, 212, 212);
     font-size: 2.3rem;
+    z-index: 6;
     display: none;
 }
 @media (max-width: 535px){
@@ -225,6 +226,14 @@
     .container #home #wrap-introduction #animation #space{
         margin-top: 25vw;
     }
+    .container #home #wrap-introduction #animation #space #astronaut{
+        width: 70px;
+    }
+
+    .container #home #wrap-introduction #animation #space #text-space{
+        font-size: 0.6rem;
+    }
+
 
     .container #home{
         height: 60vh;
@@ -388,4 +397,47 @@
 }
 
 
+.menu-phone{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(49, 49, 49);
+    z-index: 5;
+  position: absolute;
+  -webkit-clip-path:  circle(100px at 100% -2%);
+  transition: 0.8s ease-in-out;
+ visibility: hidden;
+  
+}
 
+
+.menu-phone ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30%;
+    
+}
+
+.menu-phone ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 10vw;
+    
+}
+
+.menu-phone ul li a{
+   text-decoration: none;
+   color: rgb(201, 201, 201);
+   font-size: 2rem;
+   font-family: monospace;
+   letter-spacing: 0.3rem;
+}
+
+.open-menu{
+    visibility: visible;
+    -webkit-clip-path:  circle(1000px at 100% -2%);
+
+
+}

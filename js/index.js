@@ -86,5 +86,32 @@ window.onload = function(){
         //buttonEmail.style.height = "10vw";
         navigator.clipboard.writeText('pablomenordeonate@gmail.com');
     })
+    //-----------------PHONE MENU------------------------------
+
+    const menuIcon = document.querySelector('.material-icons.menu');
+    const menu = document.querySelector('.menu-phone');
+    const linksMenu = document.querySelectorAll('.linkMenu');
+    let opened = false;
+
+
+    menuIcon.addEventListener('click', ()=>{
+    // menu.style.visibility = 'visible';
+        if(opened){
+            menu.classList.remove('open-menu');
+            opened= false;
+        }
+        else if(!opened){
+            menu.classList.add('open-menu');
+            opened = true;
+        }
+            
+    })
+
+    linksMenu.forEach(link =>
+        link.addEventListener('click', ()=>{
+        menu.classList.remove('open-menu');
+    }))
+
+  
 
 }
