@@ -166,13 +166,21 @@ body{
                   #text-space{
                       transition: all 2s ease-in;
                       color: #fff;
-                      position: absolute;
-                      top: 50%;
+                      height: 10%;
+                      text-align: center;
+                      margin-top: 10%;
                       display: none;
                       animation: on-off 2.3s infinite;    
                       font-family: 'Cutive Mono', monospace;   
                       font-size: 1.2em;              
                   }
+
+                  #astronaut{
+                      width: 150px;
+                      margin-top: 10%;
+                      visibility: hidden;
+                      display: none;
+                  }     
 
                   @keyframes fly {
                     50%{
@@ -193,6 +201,15 @@ body{
                     100%{
                         color: #fff;
 
+                    }
+                 } 
+
+                 @keyframes appear {
+                    50%{
+                     height: 170px;
+                    }
+                    100%{
+                        height: 150px;
                     }
                  } 
                }
@@ -239,7 +256,7 @@ body{
                     display: block;
                     position: absolute;
                     background-color: #00B567;
-                    width: 5.3%;
+                    width: 6.5%;
                     height: 0.6%;
                     transform: scale(0);
                     transition: all 0.2s ease-out;
@@ -261,7 +278,7 @@ body{
        
         .tech-text{
             margin-left: 5%;
-            margin-top: 10%;
+            margin-top: 6.5%;
             width: 35vw;
             height: 350px;
             font-family: 'Cutive Mono';
@@ -274,6 +291,7 @@ body{
 
     #portfolio{
         height: 100vh;
+        margin-top: 10vh;
         h2{
             color: #a5a4a4;
             font-family: monospace;
@@ -317,6 +335,7 @@ body{
                  display: none;
                  margin-top: 40px;
                  margin-bottom: 25px;
+                 pointer-events: none;
                  
                     .github{
                         margin: 0px auto;
@@ -333,6 +352,8 @@ body{
                         color: #161716;
                         position: absolute;
                         margin: auto;
+                        display: block;
+                        pointer-events: none;
                     }
                     p{
                         transform: scale(0);
@@ -353,6 +374,8 @@ body{
 
                 a{
                     text-decoration: none;
+                    display: block;
+                    pointer-events: none;
                     .visit-site{
                         width: 30%;
                         margin: auto;
@@ -364,6 +387,8 @@ body{
                         color: #161716;
                         font-family: monospace;
                         font-size: 0.8rem;
+                        
+                    
                        
                     }
                 }
@@ -384,6 +409,10 @@ body{
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                pointer-events: all;
+            }
+            .project:hover a{
+              pointer-events: all;
             }
             @keyframes bounce {
                 50%{
@@ -454,3 +483,4 @@ body{
         }
     }
 }
+

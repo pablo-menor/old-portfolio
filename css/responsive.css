@@ -1,0 +1,383 @@
+/***********WIDTH************/
+
+@media(max-width : 1225px){
+
+    .container #portfolio .projects .project{
+        width: 20%;
+    }
+    .container #portfolio .projects .project .github-icon{
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+}
+
+@media(min-width : 1320px){
+
+    .container #home #wrap-introduction #animation #space{
+        width: 500px;
+        height: 500px;
+        margin-left: 10%;
+    }
+}
+@media(max-width : 1330px){
+
+    .container #home #wrap-introduction #intro p{
+     font-size: 2rem;
+    }
+}
+
+@media(max-width : 1040px){
+
+    .container #home #wrap-introduction #intro p{
+     font-size: 1.7rem;
+    }
+
+    .container #home #wrap-introduction #animation #space{
+        width: 300px;
+        height: 300px;
+        margin-left: 15%;
+    }
+    .container #home #wrap-introduction #animation #space #rocket{
+        width: 200px;
+      
+    }
+    .container #home #wrap-introduction #animation #space #text-space{
+        font-size: 0.8rem;
+      
+    }
+    .container #home #wrap-introduction #animation #space #astronaut{
+        width: 100px;
+      
+    }
+}
+@media(max-width : 1050px){
+
+    .container nav #wrap #sections{
+     margin-right: 3%;
+    }
+    .container #skills .icons {
+        grid-template-rows: 120px 160px 120px;
+    }
+
+    .container #skills .tech-text {
+        font-size: 1.5rem;
+    }
+
+    .container #portfolio{
+        margin-top: 1vh;
+        
+    }
+}
+@media(max-width : 900px){
+
+    .container nav #wrap #sections{
+     font-size: 1rem;
+    }
+}
+@media(max-width : 940px){
+
+    .container #skills .tech-text{
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width : 890px){
+    .container #home #wrap-introduction #intro p{
+        font-size: 1.3rem;
+       }
+    .container #skills .tech-text{
+        font-size: 1.3rem;
+        line-height: 2.2rem;
+    }
+    .container nav #wrap #logo{
+        font-size: 0.8rem;
+       }
+}
+@media(max-width : 800px){
+    .container #skills h2 {
+        margin-top: 20vw;
+        margin-left: 6vw;
+    }
+
+    .container #portfolio h2{
+        margin-top: 20vw;
+        margin-left: 6vw;
+    }
+
+    .container #contact h2{
+        margin-top: 40vw;
+        margin-left: 6vw;
+    }
+
+    .container nav #wrap #sections ul li{
+        padding-right: 2vw;
+    }
+    .container #home #welcome{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width : 720px){
+
+    .container #skills .tech-text{
+        line-height: 5vw;
+        width: 45vw;
+    }
+
+    .container #home #wrap-introduction #animation #space{
+        width: 250px;
+        height: 250px;
+        margin-top: 10vw;
+        margin-left: 5vw;
+    }
+    .container #home #wrap-introduction #animation #space #rocket{
+       width: 150px;
+    }
+}
+
+@media(max-width : 695px){
+
+    .container #home #wrap-introduction #intro p{
+        line-height: 4vw;
+    }
+    .container #home #welcome{
+        font-size: 1.5rem;
+    }
+
+    .container #skills h2{
+        margin-top: 0vw;
+    }
+    .container #portfolio h2{
+        margin-top: 0vw;
+        
+    }
+}
+
+@media (max-width: 650px){
+    .container nav #wrap #sections{
+        font-size: 0.8rem;
+    }
+    .container nav #wrap #logo{
+       font-size: 0.7rem;
+    }
+    .container nav #wrap #sections ul li{
+        padding-right: 2vw;
+    }
+
+    .container #contact h2{
+        margin-top: 0vw;
+    }
+}
+@media (max-width: 590px){
+    .container nav #wrap #logo{
+        font-size: 0.6rem;
+    }
+    .container nav #wrap #sections{
+        font-size: 0.7rem;
+    }
+}
+
+.container nav #wrap .material-icons.menu{
+    position: absolute;
+    right: 5%;
+    color: rgb(212, 212, 212);
+    font-size: 2.3rem;
+    display: none;
+}
+@media (max-width: 535px){
+    .container nav #wrap #logo{
+        font-size: 0.6rem;
+    }
+    .container nav #wrap #sections{
+        display: none;
+    }
+    .container nav #wrap .material-icons.menu{
+        display: block;
+    }
+    .container #home #wrap-introduction #animation #space{
+        margin-left: 1vw;
+    }
+    .container #home #welcome{
+        margin-top: 20vw;
+    
+    }
+    .container #home #wrap-introduction #intro{
+        margin-top: 10vw;
+    
+    }
+}
+@media (max-width: 492px){
+    .container #home #wrap-introduction #animation #space{
+        width: 200px;
+        height: 200px;
+    }
+
+}
+@media (max-width: 450px){
+    .container #home #wrap-introduction #intro p{
+        font-size: 1rem;
+    }
+    .container #home{
+        height: 60vh;
+    }
+
+    .container #skills{
+        height: 60vh;
+    }
+    .container #skills h2{
+        font-size: 1.5rem;
+    }
+    .container #skills .wrap-tech .icons{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 80px 100px 80px;
+        
+    }
+
+    .container #skills .wrap-tech .icons .tec .icon{
+        width: 10vw;
+    }
+
+    .container #skills .tech-text{
+        font-size: 1.1rem;
+        width: 80vw;
+        line-height: 1.8rem;
+    }
+    .container #portfolio{
+        height: 90vh;
+        margin-bottom: 100vw;
+    }
+
+    .container #portfolio h2{
+        margin-top: 15vw;
+        font-size: 1.5rem;
+    }
+    .container #portfolio .projects{
+        margin-top: 15vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+    .container #portfolio .projects .project{
+        margin-bottom: 10vw;
+        width: 50vw;
+    }
+    .container #contact {
+        height: 60vh;
+    }
+
+    .container #contact h2{
+       font-size: 1.5rem;
+       margin-top: 10vw;
+       margin-bottom: 20vw;
+    }
+
+    .container #contact .social .gmail .email{
+        width: 55vw;
+        height: 5vw;
+        font-size: 0.8rem;
+        line-height: 5vw;
+    }
+
+    .container #contact .social .linkedin img{
+        width: 18vw;
+        margin-top: 7vw;
+    }
+}
+
+@media (max-width: 404px){
+    .container #portfolio h2{
+        margin-top: 30vw;
+    }
+
+    .container #skills .icons .tec .icon{
+        margin-top: 10vw;
+    }
+    .container #contact h2{
+        margin-top: 20vw;
+    }
+}
+
+@media (max-width: 370px){
+    .container #contact .social .gmail .email{
+        width: 55vw;
+        height: 4vw;
+        font-size: 0.7rem;
+        line-height: 4vw;
+    }
+}
+
+
+@media(min-width : 1457px){
+
+    .container #skills .tech-text {
+        font-size: 2rem;
+    }
+
+    .container #contact .social .gmail .email{
+        width: 500px; 
+        line-height: 35px;
+    }
+
+    .container #home #wrap-introduction #animation #space #astronaut{
+        width: 250px;
+    }
+}
+
+@media(min-width : 1612px){
+
+    .container #home #wrap-introduction #animation #space{
+        width: 600px;
+        height: 600px;
+        margin-left: 15%;
+    }
+
+    .container #skills .icons {
+        grid-template-rows: 200px 250px 200px;
+    }
+
+}
+
+@media(min-width : 1650px){
+
+    .container #skills .tech-text {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+}
+
+@media(min-width : 1810px){
+    .container #skills .icons {
+        grid-template-rows: 270px 320px 270px;
+    }
+
+    .container #skills .tech-text{
+        margin-top: 8.5%;
+    }
+}
+
+
+/***********HEIGHT************/
+
+@media(min-height: 722px) {
+    
+    .container #portfolio{
+        margin-top: 10vh;
+        height: 70vh;
+    }
+}
+
+
+
+/****BOTH****/
+
+@media (max-width: 1810px) and (min-height: 860px){
+    .container #portfolio{
+        margin-top: 1vh;
+    }
+}
+
+
+
