@@ -80,9 +80,10 @@ window.onload = function(){
     })
 
     gmail.addEventListener('click', () =>{
-        buttonEmail.innerHTML = 'Copied!';
-        buttonEmail.style.lineHeight = '35px';
+        buttonEmail.innerHTML = `Copied!`;
+        buttonEmail.style.lineHeight = '1.4rem';
         buttonEmail.style.backgroundColor = "#00B567";
+        //buttonEmail.style.height = "10vw";
         navigator.clipboard.writeText('pablomenordeonate@gmail.com');
     })
 
