@@ -215,9 +215,17 @@
 
 }
 @media (max-width: 450px){
-    .container #home #wrap-introduction #intro p{
-        font-size: 1rem;
+    .container #home #welcome{
+        margin-top: 30vw;
     }
+    .container #home #wrap-introduction #intro p{
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    }
+    .container #home #wrap-introduction #animation #space{
+        margin-top: 25vw;
+    }
+
     .container #home{
         height: 60vh;
     }
