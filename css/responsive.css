@@ -407,7 +407,7 @@
     }
 }
 
-@media(max-height: 722px) {
+@media(max-height: 722px) and (max-width:380px) {
     .container #portfolio h2{
         margin-top: 90vw;
     }
