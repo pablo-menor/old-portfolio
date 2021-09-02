@@ -386,14 +386,24 @@
 
 }
 
-@media(min-width : 1810px){
+@media(min-width : 1790px){
     .container #skills .icons {
         grid-template-rows: 270px 320px 270px;
     }
 
     .container #skills .tech-text{
         margin-top: 8.5%;
+        line-height: 4rem;
     }
+
+    .container #home #welcome{
+        font-size: 3.5rem;
+    }
+
+   .container #home #wrap-introduction #intro #intro-p{
+       font-size: 3rem;
+       line-height: 4rem;
+   }
 }
 
 
