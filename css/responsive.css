@@ -314,6 +314,27 @@
     .container #contact h2{
         margin-top: 20vw;
     }
+
+    .container #home #wrap-introduction #intro #intro-p {
+        font-size: 1.5rem;
+        margin-top: 15vw;
+        line-height: 1.8rem;
+    }
+
+    .container #home{
+        height: 50vh;
+    }
+    .container #home h2{
+        line-height: 2.1rem;
+    }
+
+    .container nav #wrap #logo{
+        font-size: 0.8rem;
+    }
+
+    .container nav #wrap .material-icons.menu{
+        font-size: 3.3rem;
+    }   
 }
 
 @media (max-width: 370px){
@@ -385,6 +406,32 @@
         height: 70vh;
     }
 }
+
+@media(max-height: 722px) {
+    .container #portfolio h2{
+        margin-top: 90vw;
+    }
+ 
+    .container #contact h2{
+     margin-top: 150vw;
+    }
+     
+ }
+ 
+
+@media(max-height: 675px) {
+    .container #home{
+        height: 60vh;
+    }
+    
+}
+@media(max-height: 651px) {
+    .container nav #wrap .material-icons.menu{
+        font-size: 2.5rem;
+    }
+     
+ }
+
 
 
 

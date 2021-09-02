@@ -112,6 +112,19 @@ window.onload = function(){
         menu.classList.remove('open-menu');
     }))
 
+    //-----------------MEDIA QUERIES------------------------------
+    const introP = document.querySelector('#intro-p');
+
+    if (window.matchMedia("(max-width: 400px)").matches) {
+
+        introP.innerHTML = "Hi! I'm Pablo, a junior web developer based in Madrid."
+    }
+    else{
+        introP.innerHTML = `Hi! I'm Pablo, a junior web developer based in Madrid.
+        I love creating intuitive and interactive user experiences,
+        I'm highly motivated and willing to learn new technologies.`
+    }
+    
   
 
 }
