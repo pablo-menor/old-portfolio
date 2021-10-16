@@ -6,9 +6,55 @@ body{
     background-color: #424242; //#242424 #313131 #3f3f3f
     max-width: 100%;
     overflow-x: hidden;
+   
+   
+
+    .cursor{
+        width: 30px;
+        height: 30px;
+        border: 2px solid #348b66;
+        border-radius: 50%;
+        position: absolute;
+         z-index: 1001;
+        transition: 180ms;
+        pointer-events: none;
+    }
+
+    .cursor-big{
+        width: 70px;
+        height: 70px;
+        border: 2px solid #348b66;
+        border-radius: 50%;
+        position: absolute;
+         z-index: 1001;
+        transition: 150ms;
+        pointer-events: none;
+    }
+    .cursor-big-2{
+        width: 150px;
+        height: 150px;
+        border: 2px solid #348b66;
+        border-radius: 50%;
+        position: absolute;
+         z-index: 1001;
+        transition: 150ms;
+        pointer-events: none;
+    }
+    .cursor-big-3{
+        width: 300px;
+        height: 300px;
+        border: 2px solid #348b66;
+        border-radius: 50%;
+        position: absolute;
+         z-index: 1001;
+        transition: 150ms;
+        pointer-events: none;
+    }
 }
 
 .container{
+   
+   
     .margin-top{
         color: #242424;
     }
@@ -23,12 +69,17 @@ body{
         top: 0px;
         width: 100vw;
         z-index: 1;
+
+
+        
         
         #wrap{
             line-height: 6vh;
             /*display: flex;
             flex-direction: row;
             align-items: center;*/
+            
+            // color: #45d3a4;
             
             #logo{
                 float: left;
@@ -47,15 +98,17 @@ body{
                 font-family:  monospace;
                 font-size: 20px;
                 letter-spacing: 3px;
-    
+                
                 ul li{
+                    
                     float: left; 
                     padding-right: 30px;
                     list-style: none;
                     a{
+                        
                         color: #989898;
                         text-decoration: none;
-                      
+                        
                         position: relative;
 
                         &::after{

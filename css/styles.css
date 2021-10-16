@@ -8,6 +8,46 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+body .cursor {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #348b66;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1001;
+  transition: 180ms;
+  pointer-events: none;
+}
+body .cursor-big {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #348b66;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1001;
+  transition: 150ms;
+  pointer-events: none;
+}
+body .cursor-big-2 {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #348b66;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1001;
+  transition: 150ms;
+  pointer-events: none;
+}
+body .cursor-big-3 {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #348b66;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1001;
+  transition: 150ms;
+  pointer-events: none;
+}
 
 .container {
   width: 100vw;
