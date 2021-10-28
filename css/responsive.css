@@ -442,10 +442,11 @@
  }
  
 
-@media(max-height: 675px) {
+@media(max-height: 400px) { 
     .container #home{
         height: 60vh;
     }
+    /* 675 */
     
 }
 @media(max-height: 651px) {
