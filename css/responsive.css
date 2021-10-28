@@ -74,6 +74,9 @@
     .container nav #wrap #sections{
      font-size: 1rem;
     }
+    .cursor{
+        visibility: hidden;
+    }
 }
 @media(max-width : 940px){
 
@@ -451,6 +454,7 @@
     }
      
  }
+
 
 
 

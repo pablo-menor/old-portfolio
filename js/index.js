@@ -1,12 +1,16 @@
-window.onload = function () {
 
+window.onload = function () {
+    const container = document.querySelector('.container');
+    container.style.display = 'none';
+    setTimeout(()=> {
+        const loader = document.querySelector('.loader-container');
+        loader.style.display = 'none';
+        container.style.display = 'block';
+    },2500)
 
     const welcome = document.querySelector("#welcome");
-
     welcome.style.marginLeft = '6.3%';
-
     const intro = document.querySelector("#intro");
-
     intro.style.marginLeft = '0%';
 
     setTimeout(() => {
@@ -133,8 +137,17 @@ window.onload = function () {
             cursor.style.top = (e.pageY - 150) + "px";
             cursor.style.left = (e.pageX - 150) + "px";
         }
+    })
+    const nav = document.querySelector('nav');
+    nav.addEventListener('mouseenter', ()=> {
+        cursor.style.visibility = 'hidden';
+    })
+    nav.addEventListener('mouseleave', ()=> {
+        if (!(window.matchMedia("(max-width: 900px)").matches)) {
 
-
+            cursor.style.visibility = 'visible';
+        }
+     
     })
     //-----------------HREFS----------------------------
 
@@ -202,6 +215,10 @@ window.onload = function () {
         introP.innerHTML = `Hi! I'm Pablo, a junior web developer based in Madrid.
         I love creating intuitive and interactive user experiences,
         I'm highly motivated and willing to learn new technologies.`
+    }
+    if (window.matchMedia("(max-width: 900px)").matches) {
+
+        cursor.style.visibility = 'hidden';
     }
 
 

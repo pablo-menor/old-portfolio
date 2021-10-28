@@ -63,7 +63,7 @@ body .cursor-big-3 {
   position: fixed;
   top: 0px;
   width: 100vw;
-  z-index: 1;
+  z-index: 1002;
 }
 .container nav #wrap {
   line-height: 6vh;

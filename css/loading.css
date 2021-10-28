@@ -1,0 +1,57 @@
+.loader-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.loader-container .loader{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(4, 180, 142);
+    border: 2px solid rgb(4, 180, 142);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+   
+
+}
+.loader-container .loader::before{
+    content: 'Welcome';
+    width:100%;
+    height: 100%;
+    position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: monospace;
+   font-size: 2em;
+   letter-spacing: 1px;
+    z-index: 1;
+
+}
+
+.loader-container .loader::after{
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    border-radius: 40%;
+    left: calc(50% - 200px);
+    bottom: 0%;
+    background-color: rgb(46, 46, 46);
+    animation: fill 2.5s ease-in-out infinite;
+}
+
+@keyframes fill {
+    0%{
+        transform: translateY(0) rotate(0deg);    
+    }
+    100%{
+        transform: translateY(-100%) rotate(350deg);    
+    }
+}
+
+
