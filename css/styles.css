@@ -250,33 +250,21 @@ body .cursor-big-3 {
 .container #skills .icons {
   width: 40vw;
   margin-left: 10%;
-  margin-top: 5%;
+  margin-top: 3%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 170px 200px 170px 170px;
+  grid-template-rows: 170px 170px 170px 170px;
+}
+.container #skills .icons .tec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container #skills .icons .tec .icon {
   margin-top: 10px;
   width: 46%;
   margin-right: 30px;
   transition: 0.1s;
-}
-.container #skills .icons .tec::after {
-  content: "";
-  display: block;
-  position: absolute;
-  background-color: #00B567;
-  width: 6.5%;
-  height: 0.6%;
-  transform: scale(0);
-  transition: all 0.2s ease-out;
-  margin-top: 10px;
-}
-.container #skills .icons .tec:hover::after {
-  transform: scale(1);
-}
-.container #skills .icons .tec:hover .icon {
-  width: 85px;
 }
 .container #skills .tech-text {
   margin-left: 5%;
