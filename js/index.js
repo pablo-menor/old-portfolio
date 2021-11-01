@@ -40,7 +40,7 @@ window.onload = function () {
 
     githubEffect('1');
     githubEffect('2');
-    githubEffect('3');
+    // githubEffect('3');
 
     //----------------Animation for the rocket------------------------------
     const rocket = document.querySelector("#rocket");
