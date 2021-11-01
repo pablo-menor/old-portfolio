@@ -386,7 +386,23 @@ body{
                         margin: 0px auto;
                     }
                 }
-
+                .source{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    align-items: center;
+                    visibility: hidden;
+                    margin-top: 40px;
+                    margin-bottom: 20px;
+                    a{
+                        color: #000;
+                        font-family: monospace;
+                        text-decoration: underline;
+                    }
+                    a:hover{
+                        font-size: 0.8rem;
+                    }
+                }
                 .github-icon{
                  display: none;
                  margin-top: 40px;
@@ -466,6 +482,9 @@ body{
                 align-items: center;
                 justify-content: center;
                 pointer-events: all;
+            }
+            .project:hover .source{
+                visibility: visible;
             }
             .project:hover a{
               pointer-events: all;

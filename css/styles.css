@@ -315,6 +315,23 @@ body .cursor-big-3 {
   font-size: 30px;
   margin: 0px auto;
 }
+.container #portfolio .projects .project .source {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  visibility: hidden;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.container #portfolio .projects .project .source a {
+  color: #000;
+  font-family: monospace;
+  text-decoration: underline;
+}
+.container #portfolio .projects .project .source a:hover {
+  font-size: 0.8rem;
+}
 .container #portfolio .projects .project .github-icon {
   display: none;
   margin-top: 40px;
@@ -377,6 +394,9 @@ body .cursor-big-3 {
   align-items: center;
   justify-content: center;
   pointer-events: all;
+}
+.container #portfolio .projects .project:hover .source {
+  visibility: visible;
 }
 .container #portfolio .projects .project:hover a {
   pointer-events: all;
