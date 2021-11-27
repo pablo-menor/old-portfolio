@@ -43,31 +43,31 @@ window.onload = function () {
     // githubEffect('3');
 
     //----------------Animation for the rocket------------------------------
-    const rocket = document.querySelector("#rocket");
-    const space = document.querySelector("#space");
-    const text_space = document.querySelector("#text-space");
-    const astronaut = document.querySelector("#astronaut");
+    // const rocket = document.querySelector("#rocket");
+    // const space = document.querySelector("#space");
+    // const text_space = document.querySelector("#text-space");
+    // const astronaut = document.querySelector("#astronaut");
 
-    space.addEventListener("mouseover", () => {
-        rocket.style.animation = "leave 4s";
-        setTimeout(function () {
-            rocket.style.display = "none";
-        }, 1000);
+    // space.addEventListener("mouseover", () => {
+    //     rocket.style.animation = "leave 4s";
+    //     setTimeout(function () {
+    //         rocket.style.display = "none";
+    //     }, 1000);
 
-        setTimeout(function () {
-            text_space.style.display = "block";
-            space.style.flexDirection = "column";
-            space.style.JustifyContent = "center";
-            space.style.alignItems = "center";
-            astronaut.style.visibility = "visible";
-        }, 1500);
+    //     setTimeout(function () {
+    //         text_space.style.display = "block";
+    //         space.style.flexDirection = "column";
+    //         space.style.JustifyContent = "center";
+    //         space.style.alignItems = "center";
+    //         astronaut.style.visibility = "visible";
+    //     }, 1500);
 
-        setTimeout(function () {
-            //astronaut.style.animation = "appear 1s";
-            astronaut.style.display = "block";
+    //     setTimeout(function () {
+    //         //astronaut.style.animation = "appear 1s";
+    //         astronaut.style.display = "block";
 
-        }, 1000);
-    })
+    //     }, 1000);
+    // })
 
     //----------------Copy email to clipboard------------------------------
 
@@ -122,14 +122,13 @@ window.onload = function () {
     document.addEventListener('mousemove', (e) => {
         if (size === 0) {
             cursor.style.top = (e.pageY - 15) + "px";
-            cursor.style.left = (e.pageX - 15) + "px";
-
+            cursor.style.left = (e.pageX - 15) + "px";        
         }
-        else if (size === 1 && work) {
+        else if (size === 1 && work) {         
             cursor.style.top = (e.pageY - 35) + "px";
             cursor.style.left = (e.pageX - 35) + "px";
         }
-        else if (size === 3) {
+        else if (size === 3) {          
             cursor.style.top = (e.pageY - 75) + "px";
             cursor.style.left = (e.pageX - 75) + "px";
         }

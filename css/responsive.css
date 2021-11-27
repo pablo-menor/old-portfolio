@@ -379,9 +379,9 @@
 @media(min-width : 1612px){
 
     .container #home #wrap-introduction #animation #space{
-        width: 600px;
-        height: 600px;
-        margin-left: 15%;
+        width: 450px;
+        height: 450px;
+        margin-left: 25%;
     }
 
     .container #skills .icons {

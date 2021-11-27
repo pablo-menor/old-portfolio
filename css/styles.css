@@ -11,12 +11,14 @@ body {
 body .cursor {
   width: 30px;
   height: 30px;
-  border: 2px solid #348b66;
+  border: 2px solid #3cac99;
+  box-shadow: 0 0 3px #71fcb6;
   border-radius: 50%;
   position: absolute;
   z-index: 1001;
   transition: 180ms;
   pointer-events: none;
+  display: none;
 }
 body .cursor-big {
   width: 70px;
